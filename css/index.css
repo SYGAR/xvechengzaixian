@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 內减模式代码 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/* index.css用来美化首页 */
+
+body {
+    background-color: #f3f5f7;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部 */
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+h1 {
+    float: left;
+}
+
+.nav {
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    margin-left: 59px;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+.search input {
+    float: left;
+    padding-left: 21px;
+    /* 左右加在一起的尺寸要小于父级的尺寸 */
+    width: 360px;
+    height: 38px;
+    border: 0px;
+}
+
+
+/* 控制palceholder */
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/btn.png);
+    border: 0;
+    position: absolute;
+}
+
+.user {
+    float: right;
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    /* 调节图片垂直对齐方式 middle居中 */
+    vertical-align: middle;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+
+.banner .left {
+    float: left;
+    padding: 0px 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 44px;
+}
+
+.banner .left a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner .left a:hover {
+    color: #00b4ff;
+}
+
+.banner .left span {
+    float: right;
+}
+
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.banner .right h2 {
+    width: 228px;
+    height: 48px;
+    background-color: #9bceea;
+    color: #fff;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.banner .right .content {
+    margin: 0px 18px;
+    padding: 12px 0;
+    height: 64px;
+    width: 192px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.banner .right .content .biaoti1 {
+    font: size 16px;
+}
+
+.banner .right .content .xiangqing {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.banner .right .more {
+    display: block;
+    margin: 6px auto 0px;
+    width: 200px;
+    height: 41px;
+    border: solid 1px #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 41px;
+}
+
+.goods {
+    margin-top: 8px;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+.goods a h2 {
+    float: left;
+    line-height: 60px;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.goods ul {
+    margin-left: 30px;
+    float: left;
+    line-height: 60px;
+}
+
+.goods .xingqu {
+    float: right;
+    line-height: 60px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    border-left: 1px solid #bfbfbf;
+    color: #050505;
+}
+
+.box .title {
+    margin-top: 37px;
+    height: 40px;
+}
+
+.box .title h2 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.box .title a {
+    padding: 0 30px 0 0;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5a5a5;
+}
+
+.box .qvanbuhezi .hezi {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+}
+
+.box .qvanbuhezi .hezi:nth-child(5n) {
+    margin-right: 0px;
+}
+
+.box .qvanbuhezi .hezi a img {
+    width: 228px;
+}
+
+.qvanbuhezi .hezi .title {
+    margin: 25px 25px 20px 24px;
+    display: block;
+    width: 184px;
+    height: 32px;
+    font-size: 14px;
+    color: #050505;
+}
+
+.qvanbuhezi .hezi .gaoji {
+    margin-left: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ff7c2d;
+}
+
+.qvanbuhezi .hezi .xvexi {
+    font-size: 12px;
+    color: #999999;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 33px;
+    height: 417px;
+    background-color: #fff;
+}
+
+.footer .left {
+    float: left;
+}
+
+.footer .left p {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.footer .left a {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: solid 1px #00a4ff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+}
+
+.footer .right {
+    float: right;
+}
+
+.footer .right dl {
+    margin-left: 152px;
+    float: left;
+}
+
+.footer .right dt {
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.footer .right dd {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+}
